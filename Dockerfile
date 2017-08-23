@@ -5,8 +5,6 @@ ENV MCROUTER_DIR /usr/local/mcrouter
 ENV MCROUTER_REPO https://github.com/Ngo-The-Trung/mcrouter.git
 ENV MCROUTER_RELEASE tngo/binary_protocol
 
-ADD install_ubuntu_16.04.sh /
-
 RUN DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
     && apt-get install -y git \
